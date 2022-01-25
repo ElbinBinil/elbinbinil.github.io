@@ -82,28 +82,32 @@
       {
         "name": "Web Development",
         "level": "95%"
+      },
+      {
+        "name": "Unity",
+        "level": "35%"
       }
     ]
   },
   "portfolio": {
     "projects": [
       {
-        "title": "Snapchat Clone (React JS)",
+        "title": "Iphone 13 leaks and features",
         "category": "",
-        "image": "snapchat.jpg",
-        "url": "https://youtu.be/1kGISk5ft2w"
+        "image": "iphone13.jpg",
+        "url": "https://youtu.be/5zCcHik4d5w"
       },
       {
-        "title": "Gmail Clone (React JS)",
+        "title": "Keyboard shortcut key for windows 10",
         "category": "",
-        "image": "gmail.jpg",
-        "url": "https://youtu.be/b7nrXjS6Dqs"
+        "image": "shortcutspic.webp",
+        "url": "https://youtu.be/3MdXLBl4a8w"
       },
       {
-        "title": "LinkedIn Clone (React JS)",
+        "title": "PlayStation 5 release date in India",
         "category": "",
-        "image": "linkedin.jpg",
-        "url": "https://youtu.be/QaYts9sPmcY"
+        "image": "ps5banner.jpg",
+        "url": "https://youtu.be/Efp27L95lMQ"
       }
     ]
   },
