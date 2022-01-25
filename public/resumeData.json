@@ -1,45 +1,45 @@
 {
   "main": {
-    "name": "Sonny Sangha",
-    "occupation": "CEO of PAPA",
-    "description": "I eat, sleep and breathe React",
+    "name": "Elbin Binil",
+    "occupation": "Young developer || Youtuber || Life long learner",
+    "description": "I eat, sleep and breathe coding",
     "image": "profilepic.jpg",
-    "bio": "Hi there! I am Sonny! You might also know me as PAPA React. I've been coding for over 10 years now. As a Full Stack developer I've worked both with startups and large corporations to help build & scale their companies. Along the journey I realised my passion existed in helping others excel and pursue their dreams as upcoming developers. With this passion, I have now trained thousand's of developers across the globe. Through live coaching sessions on Youtube, I have accumulated several MILLION views demonstrating how to apply developer skills in a range of cool builds and challenges. I deliver REAL VALUE by teaching REAL WORLD projects to help students enter the world of web development. You’ll get hands-on experience and learn the skills that are required to succeed in the real-world in this community.",
-    "contactmessage": "Get in touch with me to be a part of the PAPA fam!",
-    "email": "papareact.team@gmail.com",
-    "phone": "+44 1234567899",
+    "bio": "Hi there! I am Elbin! You might also know me as elbinbinil. I've been coding for over 3 years now. As a Full Stack developer I've worked on multiple different projects. I am a highschool student and aspiring developer. I love to work on open source projects and to help other developers. I do youtube videos all about tech and sponsered video too",
+    "contactmessage": "Get in touch with me let's make this world better!",
+    "email": "elbinbinil@gmail.com",
+    "phone": "+91 7397686837",
     "address": {
-      "street": "123 Dev Lane",
-      "city": "London",
-      "state": "Devosphere",
-      "zip": "W3B D3V"
+      "street": "82/2 Sivaji Colony",
+      "city": "Coimbatore",
+      "state": "TamilNadu",
+      "zip": "xxxxx"
     },
-    "website": "https://www.papareact.com/course",
-    "resumedownload": "http://papareact.com",
+    "website": "https://elbinbinil.github.io",
+    "resumedownload": "https://elbinbinil.github.io",
     "social": [
       {
         "name": "youtube",
-        "url": "https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA",
+        "url": "https://www.youtube.com/c/elbinbinil",
         "className": "fa fa-youtube"
       },
       {
         "name": "facebook",
-        "url": "https://www.facebook.com/sonny.sangha.3",
+        "url": "https://www.facebook.com/elbinbinil",
         "className": "fa fa-facebook"
       },
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/saajansangha",
+        "url": "https://www.linkedin.com/in/elbinbinil",
         "className": "fa fa-linkedin"
       },
       {
         "name": "instagram",
-        "url": "https://www.instagram.com/ssssangha/",
+        "url": "https://www.instagram.com/elbinbinil/",
         "className": "fa fa-instagram"
       },
       {
         "name": "github",
-        "url": "https://github.com/PapaReact",
+        "url": "https://github.com/elbinbinil",
         "className": "fa fa-github"
       }
     ]
@@ -48,18 +48,18 @@
     "skillmessage": "My Programming Language Proficiency",
     "education": [
       {
-        "school": "University of Kent - UK",
-        "degree": "Bachelor's Degree, Computer Science",
-        "graduated": "July 2016",
-        "description": "Graduated with First Class Honours"
+        "school": "Lisieux Mat Hr Sec School",
+        "degree": "Not yet",
+        "graduated": "Not yet",
+        "description": "I have an OK score on all my test"
       }
     ],
     "work": [
       {
-        "company": "PAPA",
-        "title": "Founder and CEO",
-        "years": "May 2019 - Present",
-        "description": "Cloning all the apps possible. On the way to clone the world! Building the PAPA Fam as large as possible."
+        "company": "Not Yet",
+        "title": "Not yet",
+        "years": "TBD",
+        "description": "TBD"
       }
     ],
     "skills": [
@@ -69,11 +69,11 @@
       },
       {
         "name": "Python",
-        "level": "85%"
+        "level": "70%"
       },
       {
         "name": "Git",
-        "level": "70%"
+        "level": "80%"
       },
       {
         "name": "JavaScript",
@@ -110,11 +110,11 @@
   "testimonials": {
     "testimonials": [
       {
-        "text": "Sonny is absolutely excellent, his depth of knowledge & his mentorship really meant a lot to us... I would definitely recommend",
+        "text": "Elbin is a good dev and his code is damn good than me. He does a clean code and everybody could understand his code 😍!",
         "user": "Jorge Fouto"
       },
       {
-        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
+        "text": "His videos are great.He provides a great tech tips for me and sure checkout his channel for more🚀!",
         "user": "Adam Curtis"
       }
     ]
