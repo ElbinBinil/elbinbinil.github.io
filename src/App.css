@@ -1,4 +1,5 @@
-.landing-page {
-  height: 100vh;
-  background-color: #2f303a;
+.submit {
+  background-color: black;
+  border-radius: 5px;
+  padding: 20px;
 }

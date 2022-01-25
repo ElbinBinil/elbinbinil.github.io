@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# PAPA React JS Resume Starter Pack and Digital Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![PAPA React JS Portfolio Starter Pack](resume-screenshot.jpg?raw=true "PAPA React JS Portfolio Stater Pack ")
 
-## Available Scripts
+### <a href="https://resume-portfolio-starter-pack.herokuapp.com">LIVE DEMO</a>
 
-In the project directory, you can run:
+## Resume Starter Pack Description
 
-### `npm start`
+This portfolio starter pack is made using React. The data on the portfolio is directly linked to a JSON file. Any changes to the portfolio can be made in the JSON file. The changes will then be reflected on to the portfolio. This allows you to customize your own personal portfolio that can be used for applying to jobs or other personal uses.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 1. Make sure you have NODE installed!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Firstly, you will need to download the latest version of Node by <a href="https://nodejs.org/en/download/">CLICKING HERE</a>
 
-### `npm test`
+## 2. Clone the repo!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Next, you will need to run the following command in the Terminal to clone the repo onto your machine.
 
-### `npm run build`
+```git clone https://github.com/sonnysangha/Resume-Portfolio-Starter-pack.git```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 3. Install Dependancies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Next, you need to install all the dependancies using:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```npm install```
 
-### `npm run eject`
+Once this is done, you can start the app with:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```npm start```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 4. Fill in your personal info
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To populate the website with all of your own data, open the public/resumeData.json file and simply replace the data in there with your own. Images for the porfolio section are to be put in the public/images/portfolio folder.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 5. (OPTIONAL) Replacing images and/or fonts
 
-## Learn More
+If you want to display your own pictures then you have to replace the files at these locations: public/images/header-background.jpg, public/images/testimonials-bg.jpg and public/favicon.ico. FILE NAMES MUST NOT BE CHANGED else the code referencing these images will no longer work.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 7. Finalising Resume
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Once all the formatting and data input is finalised, run `npm run build`. This will create a dedicated build folder.
 
-### Code Splitting
+## 8. Host Resume Online
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1) Open the build folder in the finder screen
+2) Go to <a href="https://www.netlify.com/">Netlify</a> and set up a profile
+3) Go to the 'Sites Tab'
+4) Simply Drag and drop the 'Build' Folder into the designated upload space
+5) The app will begin deploying & the deployment URL will be presented!
 
-### Analyzing the Bundle Size
+🚀 BOOM, you are now LIVE!!!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Credits
 
-### Making a Progressive Web App
+##### Original Idea
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="https://github.com/tbakerx/react-resume-template/blob/master/README.md">Inspiration from Tim Baker (tbakerx)</a>
