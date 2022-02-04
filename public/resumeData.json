@@ -68,8 +68,20 @@
         "level": "100%"
       },
       {
+        "name": "React Native",
+        "level": "80%"
+      },
+      {
+        "name": "TypeScript",
+        "level": "70%"
+      },
+      {
         "name": "Python",
         "level": "70%"
+      },
+      {
+        "name": "NodeJs",
+        "level": "90%"
       },
       {
         "name": "Git",
