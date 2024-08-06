@@ -50,7 +50,7 @@ const PortfolioLayout = () => {
               {/* Profile section */}
               <div className="bg-purple-700 p-6 rounded-lg">
                 <img
-                  src="https://media.licdn.com/dms/image/D5635AQGc1w2vmm3qHQ/profile-framedphoto-shrink_400_400/0/1687782663007?e=1722067200&v=beta&t=CJeDzwRj5uFRWZ26cQDg3R3s4u_em_6Dg-4yLdYfX8U"
+                  src="https://github.com/ElbinBinil/elbinbinil.github.io/blob/main/profile.png?raw=true"
                   alt="Profile"
                   className="w-full max-w-[200px] mx-auto rounded-lg mb-4"
                 />
