@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #111827;
+  --foreground: #f9fafb;
+}
+
+@font-face {
+  font-family: "AfacadFlux";
+  src: url("/fonts/AfacadFlux.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111827;
+    --foreground: #f9fafb;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-weight: 400;
+  font-style: normal;
+  font-family: var(--font-afacad-flux), sans-serif;
+}
+
+/* Dark theme enhancements */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #374151;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 4px;
+  border: 2px solid #374151;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
