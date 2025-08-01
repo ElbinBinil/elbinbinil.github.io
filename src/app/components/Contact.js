@@ -6,6 +6,8 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { useProfile } from "../../hooks/useFirestore";
+import { LoadingSpinner } from "./Loading";
 import "./contact.css";
 
 // Custom LeetCode Icon Component

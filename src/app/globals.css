@@ -53,6 +53,16 @@ body {
   background-color: #6b7280;
 }
 
+/* Hide scrollbar for horizontal timeline */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
