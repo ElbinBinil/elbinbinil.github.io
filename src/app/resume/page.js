@@ -199,7 +199,7 @@ export default function ResumePage() {
       <div className="bg-gradient-to-r from-gray-800 to-gray-900 border-t border-gray-700 p-4">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-400 text-sm">
-            💼 Interested in working together? Let's connect!
+            💼 Interested in working together? Let&apos;s connect!
           </p>
           <div className="flex justify-center space-x-4 mt-2">
             <a

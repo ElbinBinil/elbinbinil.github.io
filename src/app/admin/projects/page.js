@@ -192,7 +192,7 @@ export default function ProjectsManagement() {
                       </td>
                       <td className="px-6 py-4">
                         <div className="flex space-x-2">
-                          <Link href={`/admin/projects/edit/${project.id}`}>
+                          <Link href={`/admin/projects/edit?id=${project.id}`}>
                             <button className="text-blue-400 hover:text-blue-300 text-sm">
                               Edit
                             </button>

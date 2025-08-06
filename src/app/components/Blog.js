@@ -54,7 +54,7 @@ const ComingSoonModal = ({ isOpen, onClose }) => {
                 Blog Coming Soon! 📝
               </h2>
               <p className="text-gray-300 text-sm">
-                I'm working on some amazing content for you
+                I&apos;m working on some amazing content for you
               </p>
             </div>
           </div>
@@ -102,7 +102,7 @@ const ComingSoonModal = ({ isOpen, onClose }) => {
                 onClick={onClose}
                 className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold py-3 px-6 rounded-lg hover:from-emerald-600 hover:to-teal-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
               >
-                Can't Wait! 🎉
+                Can&apos;t Wait! 🎉
               </button>
             </div>
 

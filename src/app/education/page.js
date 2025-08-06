@@ -261,7 +261,7 @@ export default function EducationPage() {
             <div className="text-6xl mb-4">📚</div>
             <h3 className="text-2xl font-bold mb-2">No Education Data</h3>
             <p className="text-gray-400">
-              Education information will be displayed here once it's added to
+              Education information will be displayed here once it&apos;s added to
               the database.
             </p>
           </div>
@@ -274,7 +274,7 @@ export default function EducationPage() {
               Interested in Learning More?
             </h3>
             <p className="text-gray-400 mb-6">
-              Let's connect and discuss how my educational background can
+              Let&apos;s connect and discuss how my educational background can
               contribute to your projects.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

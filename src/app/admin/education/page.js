@@ -282,7 +282,7 @@ export default function EducationManagement() {
                         Order: {item.order || index + 1}
                       </span>
                       <Link
-                        href={`/admin/education/edit/${item.id}`}
+                        href={`/admin/education/edit?id=${item.id}`}
                         className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded text-sm transition-colors text-center"
                       >
                         Edit

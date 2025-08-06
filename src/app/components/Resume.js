@@ -120,7 +120,7 @@ const ResumeModal = ({ isOpen, onClose, onSubmit, loading }) => {
                 View My Resume
               </h2>
               <p className="text-gray-300 text-sm">
-                I'd love to know more about you before sharing my resume
+                I&apos;d love to know more about you before sharing my resume
               </p>
             </div>
           </div>
