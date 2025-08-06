@@ -131,3 +131,54 @@ export const getAllWorkExperience = async () => {
     throw error;
   }
 };
+
+// Education CRUD
+export const addEducation = async (educationData) => {
+  try {
+    const docRef = await addDoc(collection(db, "education"), {
+      ...educationData,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    });
+    return docRef.id;
+  } catch (error) {
+    console.error("Error adding education:", error);
+    throw error;
+  }
+};
+
+export const updateEducation = async (educationId, educationData) => {
+  try {
+    const educationRef = doc(db, "education", educationId);
+    await updateDoc(educationRef, {
+      ...educationData,
+      updatedAt: new Date(),
+    });
+  } catch (error) {
+    console.error("Error updating education:", error);
+    throw error;
+  }
+};
+
+export const deleteEducation = async (educationId) => {
+  try {
+    await deleteDoc(doc(db, "education", educationId));
+  } catch (error) {
+    console.error("Error deleting education:", error);
+    throw error;
+  }
+};
+
+export const getAllEducation = async () => {
+  try {
+    const q = query(collection(db, "education"), orderBy("order", "asc"));
+    const querySnapshot = await getDocs(q);
+    return querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+  } catch (error) {
+    console.error("Error fetching all education:", error);
+    throw error;
+  }
+};

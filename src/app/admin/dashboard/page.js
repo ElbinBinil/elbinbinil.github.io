@@ -4,10 +4,12 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "../../../contexts/AuthContext";
 import { signOutUser } from "../../../lib/auth";
+import { useQuickAnalytics } from "../../../hooks/useQuickAnalytics";
 import { LoadingSpinner } from "../../components/Loading";
 
 export default function AdminDashboard() {
   const { user, isAdmin, loading } = useAuth();
+  const { quickStats, loading: analyticsLoading } = useQuickAnalytics();
   const router = useRouter();
 
   useEffect(() => {
@@ -99,6 +101,21 @@ export default function AdminDashboard() {
             </div>
           </Link>
 
+          {/* Education Management */}
+          <Link href="/admin/education">
+            <div className="bg-gradient-to-br from-indigo-600 to-indigo-800 p-6 rounded-lg hover:from-indigo-700 hover:to-indigo-900 transition-all cursor-pointer">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Education</h3>
+                  <p className="text-indigo-100">
+                    Manage your education history
+                  </p>
+                </div>
+                <div className="text-4xl opacity-50">🎓</div>
+              </div>
+            </div>
+          </Link>
+
           {/* Profile Management */}
           <Link href="/admin/profile">
             <div className="bg-gradient-to-br from-purple-600 to-purple-800 p-6 rounded-lg hover:from-purple-700 hover:to-purple-900 transition-all cursor-pointer">
@@ -126,15 +143,21 @@ export default function AdminDashboard() {
           </Link>
 
           {/* Analytics */}
-          <div className="bg-gradient-to-br from-gray-600 to-gray-800 p-6 rounded-lg">
-            <div className="flex items-center justify-between">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Analytics</h3>
-                <p className="text-gray-100">Coming soon...</p>
+          <Link href="/admin/analytics">
+            <div className="bg-gradient-to-br from-yellow-600 to-yellow-800 p-6 rounded-lg hover:from-yellow-700 hover:to-yellow-900 transition-all cursor-pointer">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Resume Analytics
+                  </h3>
+                  <p className="text-yellow-100">
+                    View resume viewing statistics
+                  </p>
+                </div>
+                <div className="text-4xl opacity-50">📊</div>
               </div>
-              <div className="text-4xl opacity-50">📊</div>
             </div>
-          </div>
+          </Link>
 
           {/* Settings */}
           <div className="bg-gradient-to-br from-red-600 to-red-800 p-6 rounded-lg">
@@ -166,6 +189,12 @@ export default function AdminDashboard() {
                 + Add Work Experience
               </Link>
               <Link
+                href="/admin/education/new"
+                className="block text-indigo-400 hover:text-indigo-300"
+              >
+                + Add Education
+              </Link>
+              <Link
                 href="/admin/profile"
                 className="block text-purple-400 hover:text-purple-300"
               >
@@ -175,10 +204,49 @@ export default function AdminDashboard() {
           </div>
 
           <div className="bg-gray-800 p-6 rounded-lg">
-            <h4 className="text-lg font-semibold mb-2">Recent Activity</h4>
-            <p className="text-gray-400 text-sm">
-              Activity tracking coming soon...
-            </p>
+            <h4 className="text-lg font-semibold mb-2">Resume Analytics</h4>
+            {analyticsLoading ? (
+              <div className="flex justify-center py-2">
+                <LoadingSpinner size="small" />
+              </div>
+            ) : quickStats ? (
+              <div className="space-y-2">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Total Views:</span>
+                  <span className="text-white font-medium">
+                    {quickStats.totalViews}
+                  </span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Today:</span>
+                  <span className="text-green-400 font-medium">
+                    {quickStats.todayViews}
+                  </span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Last 7 days:</span>
+                  <span className="text-blue-400 font-medium">
+                    {quickStats.viewsLast7Days}
+                  </span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Top Source:</span>
+                  <span className="text-yellow-400 font-medium capitalize">
+                    {quickStats.topSource}
+                  </span>
+                </div>
+                <Link
+                  href="/admin/analytics"
+                  className="inline-block text-xs text-blue-400 hover:text-blue-300 mt-2"
+                >
+                  View detailed analytics →
+                </Link>
+              </div>
+            ) : (
+              <p className="text-gray-400 text-sm">
+                No analytics data available yet.
+              </p>
+            )}
           </div>
 
           <div className="bg-gray-800 p-6 rounded-lg">
