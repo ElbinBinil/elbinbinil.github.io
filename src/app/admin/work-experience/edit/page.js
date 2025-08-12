@@ -1,22 +1,22 @@
-'use client';
+"use client";
 
-import { useRouter, useSearchParams } from 'next/navigation';
-import { useState, useEffect, Suspense } from 'react';
-import { db } from '../../../../lib/firebase';
-import { doc, getDoc, updateDoc } from 'firebase/firestore';
+import { useRouter, useSearchParams } from "next/navigation";
+import { useState, useEffect, Suspense } from "react";
+import { db } from "../../../../lib/firebase";
+import { doc, getDoc, updateDoc } from "firebase/firestore";
 
 function EditWorkExperienceContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const id = searchParams.get('id');
+  const id = searchParams.get("id");
 
   const [workExp, setWorkExp] = useState({
-    company: '',
-    position: '',
-    duration: '',
-    location: '',
+    company: "",
+    position: "",
+    duration: "",
+    location: "",
     description: [],
-    technologies: []
+    technologies: [],
   });
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -31,17 +31,17 @@ function EditWorkExperienceContent() {
 
   const fetchWorkExperience = async () => {
     try {
-      const docRef = doc(db, 'workExperience', id);
+      const docRef = doc(db, "workExperience", id);
       const docSnap = await getDoc(docRef);
-      
+
       if (docSnap.exists()) {
         setWorkExp(docSnap.data());
       } else {
-        console.log('No such document!');
-        router.push('/admin/work-experience');
+        console.log("No such document!");
+        router.push("/admin/work-experience");
       }
     } catch (error) {
-      console.error('Error fetching work experience:', error);
+      console.error("Error fetching work experience:", error);
     } finally {
       setLoading(false);
     }
@@ -49,25 +49,27 @@ function EditWorkExperienceContent() {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setWorkExp(prev => ({
+    setWorkExp((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleDescriptionChange = (e) => {
-    const description = e.target.value.split('\n').filter(line => line.trim());
-    setWorkExp(prev => ({
+    const description = e.target.value
+      .split("\n")
+      .filter((line) => line.trim());
+    setWorkExp((prev) => ({
       ...prev,
-      description
+      description,
     }));
   };
 
   const handleTechnologiesChange = (e) => {
-    const technologies = e.target.value.split(',').map(tech => tech.trim());
-    setWorkExp(prev => ({
+    const technologies = e.target.value.split(",").map((tech) => tech.trim());
+    setWorkExp((prev) => ({
       ...prev,
-      technologies
+      technologies,
     }));
   };
 
@@ -77,11 +79,11 @@ function EditWorkExperienceContent() {
 
     setSaving(true);
     try {
-      const docRef = doc(db, 'workExperience', id);
+      const docRef = doc(db, "workExperience", id);
       await updateDoc(docRef, workExp);
-      router.push('/admin/work-experience');
+      router.push("/admin/work-experience");
     } catch (error) {
-      console.error('Error updating work experience:', error);
+      console.error("Error updating work experience:", error);
     } finally {
       setSaving(false);
     }
@@ -112,10 +114,13 @@ function EditWorkExperienceContent() {
     <div className="min-h-screen bg-black text-white p-8">
       <div className="max-w-2xl mx-auto">
         <h1 className="text-3xl font-bold mb-8">Edit Work Experience</h1>
-        
+
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
+            <label
+              htmlFor="company"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
               Company
             </label>
             <input
@@ -130,7 +135,10 @@ function EditWorkExperienceContent() {
           </div>
 
           <div>
-            <label htmlFor="position" className="block text-sm font-medium text-gray-300 mb-2">
+            <label
+              htmlFor="position"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
               Position
             </label>
             <input
@@ -145,7 +153,10 @@ function EditWorkExperienceContent() {
           </div>
 
           <div>
-            <label htmlFor="duration" className="block text-sm font-medium text-gray-300 mb-2">
+            <label
+              htmlFor="duration"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
               Duration
             </label>
             <input
@@ -160,7 +171,10 @@ function EditWorkExperienceContent() {
           </div>
 
           <div>
-            <label htmlFor="location" className="block text-sm font-medium text-gray-300 mb-2">
+            <label
+              htmlFor="location"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
               Location
             </label>
             <input
@@ -174,13 +188,16 @@ function EditWorkExperienceContent() {
           </div>
 
           <div>
-            <label htmlFor="description" className="block text-sm font-medium text-gray-300 mb-2">
+            <label
+              htmlFor="description"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
               Description (one point per line)
             </label>
             <textarea
               id="description"
               name="description"
-              value={workExp.description.join('\n')}
+              value={workExp.description.join("\n")}
               onChange={handleDescriptionChange}
               rows={6}
               className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -189,14 +206,17 @@ function EditWorkExperienceContent() {
           </div>
 
           <div>
-            <label htmlFor="technologies" className="block text-sm font-medium text-gray-300 mb-2">
+            <label
+              htmlFor="technologies"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
               Technologies (comma-separated)
             </label>
             <input
               type="text"
               id="technologies"
               name="technologies"
-              value={workExp.technologies.join(', ')}
+              value={workExp.technologies.join(", ")}
               onChange={handleTechnologiesChange}
               className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="React, Node.js, Python"
@@ -209,12 +229,12 @@ function EditWorkExperienceContent() {
               disabled={saving}
               className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50"
             >
-              {saving ? 'Saving...' : 'Update Work Experience'}
+              {saving ? "Saving..." : "Update Work Experience"}
             </button>
-            
+
             <button
               type="button"
-              onClick={() => router.push('/admin/work-experience')}
+              onClick={() => router.push("/admin/work-experience")}
               className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700"
             >
               Cancel
@@ -228,13 +248,15 @@ function EditWorkExperienceContent() {
 
 export default function EditWorkExperience() {
   return (
-    <Suspense fallback={
-      <div className="min-h-screen bg-black text-white p-8">
-        <div className="max-w-2xl mx-auto">
-          <h1 className="text-3xl font-bold mb-8">Loading...</h1>
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-black text-white p-8">
+          <div className="max-w-2xl mx-auto">
+            <h1 className="text-3xl font-bold mb-8">Loading...</h1>
+          </div>
         </div>
-      </div>
-    }>
+      }
+    >
       <EditWorkExperienceContent />
     </Suspense>
   );

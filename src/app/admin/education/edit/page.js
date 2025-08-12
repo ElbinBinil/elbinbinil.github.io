@@ -1,21 +1,21 @@
-'use client';
+"use client";
 
-import { useRouter, useSearchParams } from 'next/navigation';
-import { useState, useEffect, Suspense } from 'react';
-import { db } from '../../../../lib/firebase';
-import { doc, getDoc, updateDoc } from 'firebase/firestore';
+import { useRouter, useSearchParams } from "next/navigation";
+import { useState, useEffect, Suspense } from "react";
+import { db } from "../../../../lib/firebase";
+import { doc, getDoc, updateDoc } from "firebase/firestore";
 
 function EditEducationContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const id = searchParams.get('id');
+  const id = searchParams.get("id");
 
   const [education, setEducation] = useState({
-    institution: '',
-    degree: '',
-    duration: '',
-    location: '',
-    description: ''
+    institution: "",
+    degree: "",
+    duration: "",
+    location: "",
+    description: "",
   });
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -30,17 +30,17 @@ function EditEducationContent() {
 
   const fetchEducation = async () => {
     try {
-      const docRef = doc(db, 'education', id);
+      const docRef = doc(db, "education", id);
       const docSnap = await getDoc(docRef);
-      
+
       if (docSnap.exists()) {
         setEducation(docSnap.data());
       } else {
-        console.log('No such document!');
-        router.push('/admin/education');
+        console.log("No such document!");
+        router.push("/admin/education");
       }
     } catch (error) {
-      console.error('Error fetching education:', error);
+      console.error("Error fetching education:", error);
     } finally {
       setLoading(false);
     }
@@ -48,9 +48,9 @@ function EditEducationContent() {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setEducation(prev => ({
+    setEducation((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -60,11 +60,11 @@ function EditEducationContent() {
 
     setSaving(true);
     try {
-      const docRef = doc(db, 'education', id);
+      const docRef = doc(db, "education", id);
       await updateDoc(docRef, education);
-      router.push('/admin/education');
+      router.push("/admin/education");
     } catch (error) {
-      console.error('Error updating education:', error);
+      console.error("Error updating education:", error);
     } finally {
       setSaving(false);
     }
@@ -95,10 +95,13 @@ function EditEducationContent() {
     <div className="min-h-screen bg-black text-white p-8">
       <div className="max-w-2xl mx-auto">
         <h1 className="text-3xl font-bold mb-8">Edit Education</h1>
-        
+
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="institution" className="block text-sm font-medium text-gray-300 mb-2">
+            <label
+              htmlFor="institution"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
               Institution
             </label>
             <input
@@ -113,7 +116,10 @@ function EditEducationContent() {
           </div>
 
           <div>
-            <label htmlFor="degree" className="block text-sm font-medium text-gray-300 mb-2">
+            <label
+              htmlFor="degree"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
               Degree
             </label>
             <input
@@ -128,7 +134,10 @@ function EditEducationContent() {
           </div>
 
           <div>
-            <label htmlFor="duration" className="block text-sm font-medium text-gray-300 mb-2">
+            <label
+              htmlFor="duration"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
               Duration
             </label>
             <input
@@ -143,7 +152,10 @@ function EditEducationContent() {
           </div>
 
           <div>
-            <label htmlFor="location" className="block text-sm font-medium text-gray-300 mb-2">
+            <label
+              htmlFor="location"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
               Location
             </label>
             <input
@@ -157,7 +169,10 @@ function EditEducationContent() {
           </div>
 
           <div>
-            <label htmlFor="description" className="block text-sm font-medium text-gray-300 mb-2">
+            <label
+              htmlFor="description"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
               Description
             </label>
             <textarea
@@ -176,12 +191,12 @@ function EditEducationContent() {
               disabled={saving}
               className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50"
             >
-              {saving ? 'Saving...' : 'Update Education'}
+              {saving ? "Saving..." : "Update Education"}
             </button>
-            
+
             <button
               type="button"
-              onClick={() => router.push('/admin/education')}
+              onClick={() => router.push("/admin/education")}
               className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700"
             >
               Cancel
@@ -195,13 +210,15 @@ function EditEducationContent() {
 
 export default function EditEducation() {
   return (
-    <Suspense fallback={
-      <div className="min-h-screen bg-black text-white p-8">
-        <div className="max-w-2xl mx-auto">
-          <h1 className="text-3xl font-bold mb-8">Loading...</h1>
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-black text-white p-8">
+          <div className="max-w-2xl mx-auto">
+            <h1 className="text-3xl font-bold mb-8">Loading...</h1>
+          </div>
         </div>
-      </div>
-    }>
+      }
+    >
       <EditEducationContent />
     </Suspense>
   );

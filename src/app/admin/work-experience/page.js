@@ -156,7 +156,9 @@ export default function WorkExperienceManagement() {
                         Order: {work.order || "N/A"}
                       </span>
                       <div className="flex space-x-2">
-                        <Link href={`/admin/work-experience/edit?id=${work.id}`}>
+                        <Link
+                          href={`/admin/work-experience/edit?id=${work.id}`}
+                        >
                           <button className="text-blue-400 hover:text-blue-300 text-sm px-3 py-1 bg-blue-600/20 rounded">
                             Edit
                           </button>

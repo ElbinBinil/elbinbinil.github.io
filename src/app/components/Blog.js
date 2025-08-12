@@ -145,14 +145,14 @@ export default function Blog() {
           className="w-full h-full lg:absolute bottom-0"
           id="ejQcAnIEep71"
           viewBox="0 0 341 341"
-          shape-rendering="geometricPrecision"
-          text-rendering="geometricPrecision"
-          project-id="14783e8da8b64156998ab714bdd10e64"
-          export-id="496926a1d2ca48ed821f167f5b7a6d1d"
+          shapeRendering="geometricPrecision"
+          textRendering="geometricPrecision"
+          data-project-id="14783e8da8b64156998ab714bdd10e64"
+          data-export-id="496926a1d2ca48ed821f167f5b7a6d1d"
           cached="true"
         >
           <g transform="translate(.300656 75.451614)">
-            <g transform="translate(0-.001745)" clip-path="url(#ejQcAnIEep76)">
+            <g transform="translate(0-.001745)" clipPath="url(#ejQcAnIEep76)">
               <g>
                 <path
                   d="M91.164062,20.183594h171.007813v151.632812h-171.007813v-151.632812Zm0,0"
@@ -167,17 +167,17 @@ export default function Blog() {
                 />
               </clipPath>
             </g>
-            <g clip-path="url(#ejQcAnIEep711)">
+            <g clipPath="url(#ejQcAnIEep711)">
               <g>
                 <path
                   d="M-3245.016478,1800.031015h3363.009066v2981.98378h-3363.009066v-2981.98378Zm0,0"
                   transform="matrix(.05085 0 0 0.05085 256.172-71.3473)"
                   fill="none"
                   stroke="#272537"
-                  stroke-width="15"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-miterlimit="10"
+                  strokeWidth="15"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeMiterlimit="10"
                 />
               </g>
               <clipPath id="ejQcAnIEep711">
@@ -187,7 +187,7 @@ export default function Blog() {
                 />
               </clipPath>
             </g>
-            <g clip-path="url(#ejQcAnIEep716)">
+            <g clipPath="url(#ejQcAnIEep716)">
               <g transform="translate(.378944 0)">
                 <path
                   d="M91.164062,20.183594h171.007813v19.269531h-171.007813v-19.269531Zm0,0"
@@ -203,7 +203,7 @@ export default function Blog() {
                 />
               </clipPath>
             </g>
-            <g clip-path="url(#ejQcAnIEep719)">
+            <g clipPath="url(#ejQcAnIEep719)">
               <clipPath id="ejQcAnIEep719">
                 <path
                   d="M90.351562,19.367188h172.632813v21.632812h-172.632813v-21.632812Zm0,0"
@@ -216,37 +216,37 @@ export default function Blog() {
               transform="matrix(-.05085 0 0 0.05085 218.539 29.8434)"
               fill="none"
               stroke="#272537"
-              stroke-width="32.083"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
+              strokeWidth="32.083"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
             />
             <path
               d="M-28.656055,2062.062719l-112.310276-144.036777"
               transform="matrix(.05085 0 0 0.05085 256.172-71.3473)"
               fill="none"
               stroke="#272537"
-              stroke-width="32.083"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
+              strokeWidth="32.083"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
             />
             <path
               d="M0.033649,0.015955L112.343924,144.052731"
               transform="matrix(.05085 0 0-.05085 249.002 33.4578)"
               fill="none"
               stroke="#272537"
-              stroke-width="32.083"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
+              strokeWidth="32.083"
+              strokeLinejoin="round"
+              strokeMiterlimit="10"
             />
             <g
               transform="translate(0 0.003025)"
-              clip-path="url(#ejQcAnIEep727)"
+              clipPath="url(#ejQcAnIEep727)"
             >
               <g>
                 <path
                   d="M91.164062,158.238281h171.007813v13.578125h-171.007813v-13.578125Zm0,0"
                   fill="#ffcc53"
-                  stroke-width="2"
+                  strokeWidth="2"
                 />
               </g>
               <clipPath id="ejQcAnIEep727">
@@ -256,17 +256,17 @@ export default function Blog() {
                 />
               </clipPath>
             </g>
-            <g clip-path="url(#ejQcAnIEep732)">
+            <g clipPath="url(#ejQcAnIEep732)">
               <g>
                 <path
                   d="M-3245.016478,4514.989817h3363.009066v267.024978h-3363.009066v-267.024978Zm0,0"
                   transform="matrix(.05085 0 0 0.05085 256.172-71.3473)"
                   fill="none"
                   stroke="#272537"
-                  stroke-width="15"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-miterlimit="10"
+                  strokeWidth="15"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeMiterlimit="10"
                 />
               </g>
               <clipPath id="ejQcAnIEep732">
@@ -281,39 +281,39 @@ export default function Blog() {
               transform="translate(.000001 0)"
               fill="#f4a261"
             />
-            <g clip-path="url(#ejQcAnIEep738)">
+            <g clipPath="url(#ejQcAnIEep738)">
               <g>
                 <path
                   d="M-2480.968596,4514.989817h1049.970486v267.024978h-1049.970486v-267.024978Zm0,0"
                   transform="matrix(.05085 0 0 0.05085 256.172-71.3473)"
                   fill="none"
                   stroke="#272537"
-                  stroke-width="15"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-miterlimit="10"
+                  strokeWidth="15"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeMiterlimit="10"
                 />
               </g>
               <clipPath id="ejQcAnIEep738">
                 <path d="M129,157h56v15.628906h-56L129,157Zm0,0" />
               </clipPath>
             </g>
-            <g clip-path="url(#ejQcAnIEep743)">
+            <g clipPath="url(#ejQcAnIEep743)">
               <g>
                 <path
                   d="M5.366301,5.372321h259.659176v217.591103h-259.659176v-217.591103Zm0,0"
                   transform="matrix(.209484 0 0 0.209557 97.9774 48.8117)"
                   fill="none"
                   stroke="#000"
-                  stroke-width="10.742"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-miterlimit="10"
+                  strokeWidth="10.742"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeMiterlimit="10"
                 />
               </g>
               <clipPath id="ejQcAnIEep743" />
             </g>
-            <g clip-path="url(#ejQcAnIEep747)">
+            <g clipPath="url(#ejQcAnIEep747)">
               <g transform="translate(0 0.000001)">
                 <path
                   id="ejQcAnIEep746"
@@ -322,7 +322,7 @@ export default function Blog() {
                   opacity="0"
                   fill="#264653"
                   stroke="#000"
-                  stroke-dasharray="185.34"
+                  strokeDasharray="185.34"
                 />
               </g>
               <clipPath id="ejQcAnIEep747">
@@ -332,7 +332,7 @@ export default function Blog() {
                 />
               </clipPath>
             </g>
-            <g clip-path="url(#ejQcAnIEep752)">
+            <g clipPath="url(#ejQcAnIEep752)">
               <g>
                 <path
                   id="ejQcAnIEep751"
@@ -346,7 +346,7 @@ export default function Blog() {
                 <path d="M170.25,61.984375h84.476562v8.191406h-84.476562v-8.191406Zm0,0" />
               </clipPath>
             </g>
-            <g clip-path="url(#ejQcAnIEep757)">
+            <g clipPath="url(#ejQcAnIEep757)">
               <g>
                 <path
                   id="ejQcAnIEep756"
@@ -361,7 +361,7 @@ export default function Blog() {
                 <path d="M170.25,75.328125h84.476562v8.191406h-84.476562v-8.191406Zm0,0" />
               </clipPath>
             </g>
-            <g clip-path="url(#ejQcAnIEep762)">
+            <g clipPath="url(#ejQcAnIEep762)">
               <g>
                 <path
                   id="ejQcAnIEep761"
@@ -381,8 +381,8 @@ export default function Blog() {
               transform="matrix(.748355 0 0 0.748355 98.2352 106.765539)"
               fill="none"
               stroke="#000"
-              stroke-dashoffset="110"
-              stroke-dasharray="116.95"
+              strokeDashoffset="110"
+              strokeDasharray="116.95"
             />
             <path
               id="ejQcAnIEep765"
@@ -390,8 +390,8 @@ export default function Blog() {
               transform="matrix(.748355 0 0 0.748355 97.9692 117.833)"
               fill="none"
               stroke="#000"
-              stroke-dashoffset="60"
-              stroke-dasharray="62.43"
+              strokeDashoffset="60"
+              strokeDasharray="62.43"
             />
             <path
               id="ejQcAnIEep766"
@@ -399,8 +399,8 @@ export default function Blog() {
               transform="matrix(.748355 0 0 0.748355 97.8517 130.215)"
               fill="none"
               stroke="#000"
-              stroke-dashoffset="210"
-              stroke-dasharray="209.63"
+              strokeDashoffset="210"
+              strokeDasharray="209.63"
             />
             <path
               id="ejQcAnIEep767"
@@ -408,8 +408,8 @@ export default function Blog() {
               transform="matrix(.748355 0 0 0.748355 212.489 142.937)"
               fill="none"
               stroke="#000"
-              stroke-dashoffset="60"
-              stroke-dasharray="56.96"
+              strokeDashoffset="60"
+              strokeDasharray="56.96"
             />
             <path
               id="ejQcAnIEep768"
@@ -417,8 +417,8 @@ export default function Blog() {
               transform="matrix(.748355 0 0 0.748355 196.702 106.267)"
               fill="none"
               stroke="#000"
-              stroke-dashoffset="80"
-              stroke-dasharray="77.7"
+              strokeDashoffset="80"
+              strokeDasharray="77.7"
             />
             <path
               id="ejQcAnIEep769"
@@ -426,8 +426,8 @@ export default function Blog() {
               transform="matrix(.748355 0 0 0.748355 155.072 117.833)"
               fill="none"
               stroke="#000"
-              stroke-dashoffset="130"
-              stroke-dasharray="133.17"
+              strokeDashoffset="130"
+              strokeDasharray="133.17"
             />
             <path
               id="ejQcAnIEep770"
@@ -435,8 +435,8 @@ export default function Blog() {
               transform="matrix(.748355 0 0 0.748355 97.8497 142.933945)"
               fill="none"
               stroke="#000"
-              stroke-dashoffset="90"
-              stroke-dasharray="92.13"
+              strokeDashoffset="90"
+              strokeDasharray="92.13"
             />
             <path
               id="ejQcAnIEep771"
@@ -444,8 +444,8 @@ export default function Blog() {
               transform="matrix(.748355 0 0 0.748355 173.708 142.937)"
               fill="none"
               stroke="#000"
-              stroke-dashoffset="40"
-              stroke-dasharray="40.63"
+              strokeDashoffset="40"
+              strokeDasharray="40.63"
             />
           </g>
           <g transform="translate(80.410849 65.197449)">
@@ -457,7 +457,7 @@ export default function Blog() {
               ry="0"
               transform="translate(19.793082 59.039086)"
               fill="#94d1ee"
-              fill-opacity="0"
+              fillOpacity="0"
               stroke="#000"
             />
             <path

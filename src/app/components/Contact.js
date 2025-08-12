@@ -83,7 +83,7 @@ export default function Contact() {
             ry="0"
             transform="translate(60.17149 108.449952)"
             fill="#e9c46a"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <path
             id="ecfYqkDzjoQ3"
@@ -144,7 +144,7 @@ export default function Contact() {
               fill="#e76f51"
               strokeWidth="0"
             >
-              <tspan y="0" fontWeight="700" stroke-width="0">
+              <tspan y="0" fontWeight="700" strokeWidth="0">
                 CONTACT ME
               </tspan>
             </text>

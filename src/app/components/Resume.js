@@ -337,8 +337,8 @@ export default function Resume({ onResumeClick }) {
               transform="matrix(.970496-.241117 0.241117 0.970496 79.712293 86.321365)"
               fill="none"
               stroke="#000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeDashoffset="115"
               strokeDasharray="115.56"
             />
@@ -348,8 +348,8 @@ export default function Resume({ onResumeClick }) {
               transform="matrix(.970496-.241117 0.241117 0.970496 82.123461 96.026326)"
               fill="none"
               stroke="#000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeDashoffset="115"
               strokeDasharray="115.56"
             />
@@ -359,8 +359,8 @@ export default function Resume({ onResumeClick }) {
               transform="matrix(.970496-.241117 0.241117 0.970496 83.329045 105.731287)"
               fill="none"
               stroke="#000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeDashoffset="115"
               strokeDasharray="115.56"
             />
@@ -370,8 +370,8 @@ export default function Resume({ onResumeClick }) {
               transform="matrix(.970496-.241117 0.241117 0.970496 84.534629 115.285528)"
               fill="none"
               stroke="#000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeDashoffset="115"
               strokeDasharray="115.56"
             />
@@ -381,8 +381,8 @@ export default function Resume({ onResumeClick }) {
               transform="matrix(.970496-.241117 0.241117 0.970496 86.292746 124.990489)"
               fill="none"
               stroke="#000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeDashoffset="115"
               strokeDasharray="115.56"
             />
@@ -406,16 +406,16 @@ export default function Resume({ onResumeClick }) {
                 transform="matrix(1 0 0 1.012426 43.095912 40.207142)"
                 fill="#fff"
                 stroke="#000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M47.75,68.09v-1.011122c-.017271-5.515059-4.484322-9.981608-10-9.998878v0c-5.515678.01727-9.982729,4.483819-10,9.998878v1.011122Z"
                 transform="translate(11.638304-4.176131)"
                 fill="#e76f51"
                 stroke="#000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </g>
           </g>
